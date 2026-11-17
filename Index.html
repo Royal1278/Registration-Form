@@ -1,0 +1,71 @@
+# Registration-Form
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f8fc" />
+  <title>Royal Services Enterprise | Dashboard</title>
+  <style>
+    :root {
+      --ink: #1b2035;
+      --muted: #7e8396;
+      --line: #eceef5;
+      --surface: #ffffff;
+      --page: #f5f7fb;
+      --purple: #7065f0;
+      --purple-dark: #5448d9;
+      --purple-soft: #f0eeff;
+      --green: #1ea877;
+      --red: #e95c66;
+      --shadow: 0 18px 40px rgba(32, 39, 71, 0.08);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: var(--page); color: var(--ink); }
+    body { font-family: inherit; }
+    button, input, select { font: inherit; }
+    a { color: inherit; text-decoration: none; }
+
+    .auth-page {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top left, rgba(112,101,240,0.28), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(30,168,119,0.18), transparent 28%),
+        linear-gradient(135deg, #111a2f 0%, #1c2340 40%, #2d2e5d 100%);
+      z-index: 50;
+      transition: opacity .45s ease, visibility .45s ease;
+      overflow: auto;
+      padding: 30px 18px;
+    }
+
+    .auth-page.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .auth-card {
+      width: min(980px, 100%);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      backdrop-filter: blur(12px);
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(12, 12, 32, 0.4);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      min-height: 680px;
+    }
+
+    .auth-visual {
+      padding: 42px 38px 32px;
+      background:
+        linear-gradient(180deg, rgba(112,101,240,0.12), rgba(255,255,255,0.02)),
+        rgba(255,255,255,0*
+
